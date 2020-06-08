@@ -37,10 +37,6 @@ class GestureRecognizer extends Component {
     this.swipeConfig = Object.assign(swipeConfig, props.config);
   }
 
-  static getDerivedStateFromProps(props) {
-    this.swipeConfig = Object.assign(swipeConfig, props.config);
-  }
-
   componentDidMount() {
     const responderEnd = this._handlePanResponderEnd.bind(this);
     const shouldSetResponder = this._handleShouldSetPanResponder.bind(this);
